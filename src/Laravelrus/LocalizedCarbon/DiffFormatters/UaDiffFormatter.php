@@ -3,11 +3,11 @@
 namespace Laravelrus\LocalizedCarbon\DiffFormatters;
 
 
-class UkDiffFormatter implements DiffFormatterInterface {
+class UaDiffFormatter implements DiffFormatterInterface {
 
     public function format($isNow, $isFuture, $delta, $unit) {
 
-        $unitStr = \Lang::choice("localized-carbon::units." . $unit, $delta, array(), 'uk');
+        $unitStr = \Lang::choice("localized-carbon::units." . $unit, $delta, array(), 'ua');
 
         if ($isNow) {
 
